@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "port": 3000,
+    "healthCheckPath": "/api/status",
+    "startCommand": "/new-api --port 3000 --log-dir /app/logs"
+  }
+}
